@@ -1,5 +1,5 @@
 # patma-regex
-A mini-library for Scale-like destructive group matching of regexes in Python using recently proposed [Structural Pattern Matching](https://www.python.org/dev/peps/pep-0622/).
+A mini-library for Scala-like destructive group matching of regexes in Python using recently proposed [Structural Pattern Matching](https://www.python.org/dev/peps/pep-0622/).
 
 # Installation
 First of all, you need to install fork of alpha version of Python 3.10 that implements match / case clause ( https://github.com/brandtbucher/cpython/tree/patma):
