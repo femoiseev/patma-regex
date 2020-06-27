@@ -21,7 +21,7 @@ pip install patma-regex
 ```
 
 # Usage
-This library allows you to use destructive matching of groups in regexes in Scala-like way. Here I provide few examples (to run them, use virtualenv environenment described in the previous section):
+This library allows you to use destructive matching of groups in regexes in Scala-like way. Here I provide few examples (to run them, use virtualenv environment described in the previous section):
 
 You can extract positional groups:
 ```python
