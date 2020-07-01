@@ -27,7 +27,7 @@ You can extract positional groups:
 ```python
 from patma_regex import PatmaRegex
 
-pattern = PatmaRegex(r"(\\w+) (\\w+)")
+pattern = PatmaRegex("(\\w+) (\\w+)")
 
 # The following code will print "John | Doe"
 match "John Doe":
@@ -39,7 +39,7 @@ Also, you can extract named groups:
 ```python
 from patma_regex import PatmaRegex
 
-pattern = PatmaRegex(r"(?P<firstname>\\w+) (?P<lastname>\\w+)")
+pattern = PatmaRegex("(?P<firstname>\\w+) (?P<lastname>\\w+)")
 
 # The following code will print "John | Doe"
 match "John Doe":
@@ -51,7 +51,7 @@ It's not necessary to refer to named groups by name, you can also do it in a pos
 ```python
 from patma_regex import PatmaRegex
 
-pattern = PatmaRegex(r"(?P<firstname>\\w+) (?P<lastname>\\w+)")
+pattern = PatmaRegex("(?P<firstname>\\w+) (?P<lastname>\\w+)")
 
 # The following code will print "John | Doe"
 match "John Doe":
@@ -62,7 +62,7 @@ By default, it's checked whether full string matches regular expression. If you 
 ```python
 from patma_regex import PatmaRegex
 
-pattern = PatmaRegex(r"(\\w+) (\\w+)", unanchored=True)
+pattern = PatmaRegex("(\\w+) (\\w+)", unanchored=True)
 
 # The following code will print "John | Doe"
 match "   John Doe   ;  ;":
