@@ -58,5 +58,16 @@ match "John Doe":
     case pattern(x, lastname=y):
         print(x + " | " + y)
 ```
+By default, it's checked whether full string matches regular expression. If you want to check if some substring matches regular expression, use `unanchored=True`:
+```python
+from patma_regex import PatmaRegex
+
+pattern = PatmaRegex(r"(\\w+) (\\w+)", unanchored=True)
+
+# The following code will print "John | Doe"
+match "   John Doe   ;  ;":
+    case pattern(x, y):
+        print(x + " | " + y)
+```
 
 Of course, you can put few `case` into `match` statement, read [PEP](https://www.python.org/dev/peps/pep-0622/) for more details.
